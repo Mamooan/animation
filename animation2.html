@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.main{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: yellow;
+    animation-name: sl;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
+    border-radius: 20vh;
+}
+@keyframes sl{
+    0%{
+        background-color: aqua;
+        transform: translate(0px);
+        transition-timing-function: linear;
+    }
+    10%{
+        background-color: blue;
+        transform: translate(500px);
+        transition-timing-function: linear;
+
+    }
+    20%{
+        background-color: brown;
+        transition-timing-function: linear;
+      
+        transform: translate(1000px);
+    }
+    30%{
+        background-color: aqua;
+        transform: translateY(400px);
+        transition-timing-function: linear;
+
+    }
+    40%{
+        background-color: orange;
+        transition-timing-function: linear;
+    }
+    50%{
+        background-color: cadetblue;
+
+    }
+    60%{
+        background-color: darkblue;
+
+    }
+    70%{
+        background-color: darkgoldenrod;
+    }
+    80%{
+        background-color: burlywood;
+    }
+    90%{
+        background-color: fuchsia;
+    }
+    100%{
+        background-color: darkred;
+        transition-timing-function: linear;
+
+        transform: translate(0px);
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+</body>
+</html>

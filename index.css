@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav {
+    height: 20vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    background: linear-gradient(rgba(188, 29, 29, 0.922), rgba(40, 129, 22, 0.90));
+
+
+}
+
+.nav h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 30px;
+    color: yellow;
+    transition-duration: 2s;
+    /* font-weight: 20; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.nav:hover h1 {
+    transform: skew(20deg);
+}
+
+.div1 {
+    height: 08vh;
+    width: 30%;
+    border-radius: 30px;
+    border: 2px solid black;
+    position: relative;
+    left: 540px;
+    top: 50px;
+}
+
+.div4 {
+    height: 08vh;
+    width: 0%;
+    background-color: black;
+
+    border-radius: 30px;
+    animation-name: move;
+    animation-duration: 4s;
+    /* animation-direction: reverse; */
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    0% {
+        background-color: red;
+        left: 0;
+    }
+
+    25% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: aqua;
+    }
+
+    75% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: black;
+        width: 70%;
+    }
+
+}
+
+.div5 {
+    height: 60vh;
+    width: 18%;
+    background-color: rgb(72, 145, 4);
+    ;
+    border: 1px solid black;
+    position: relative;
+    left: 70px;
+    border-radius: 15px;
+}
+
+.div6 {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    border: 2px solid black;
+    position: absolute;
+    left: 85px;
+    animation-name: reverse;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes reverse {
+    0% {
+        background-color: red;
+        top: 0;
+    }
+
+    25% {
+        background-color: blue;
+    }
+
+    50% {
+        background-color: aqua;
+    }
+
+    75% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: rgb(140, 0, 255);
+        top: 75%;
+    }
+}
